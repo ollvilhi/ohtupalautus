@@ -1,4 +1,8 @@
 class Player:
+
+    """ Luokka, jonka olioina StatisticsService-luokka käsittelee yksittäisen
+    pelaajan tietoja."""
+
     def __init__(self, name, team, goals, assists):
         self.name = name
         self.team = team
