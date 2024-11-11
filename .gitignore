@@ -1,0 +1,14 @@
+# "Tee .gitignore-tiedosto, jossa määrittelet, että repositorion
+# juurihakemistossa olevat tiedostot, joiden pääte on tmp ignoroidaan...
+*.tmp
+
+# ...ja hakemistot joiden nimi on __pycache__ ja .pytest_cache ignoroidaan"
+__pycache__/
+.pytest_cache/
+
+# Kattavuushakemisto
+htmlcov/
+
+# Kattavuustiedosto
+.coverage
+
