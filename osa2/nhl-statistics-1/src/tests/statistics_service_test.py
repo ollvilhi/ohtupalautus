@@ -26,10 +26,8 @@ class TestStatisticsService(unittest.TestCase):
         self.assertEqual(player.points, 37 + 53)
 
     def test_search_none(self): 
-        # TODO
-        #player = self.stats.search(None)
-        #self.assertEqual(player.name, None)
-        pass
+        player = self.stats.search("Hintikka")
+        self.assertIsNone(player)
 
     def test_team_player_list(self):
         players_of_team = self.stats.team("EDM")
