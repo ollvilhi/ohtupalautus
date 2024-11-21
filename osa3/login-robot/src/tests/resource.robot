@@ -11,5 +11,5 @@ Input Credentials
     Input  ${password}
     Run Application
 
-Input New Command
+Input New Command  # Setup / register.robot
     Input  new

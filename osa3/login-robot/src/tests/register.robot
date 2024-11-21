@@ -2,7 +2,6 @@
 Resource  resource.robot
 Test Setup  Input New Command And Create User
 
-
 *** Test Cases ***
 Register With Valid Username And Password
     Input Credentials   uusikalle  uusikalle123
@@ -13,11 +12,11 @@ Register With Already Taken Username And Valid Password
     Output Should Contain   User with username kalle already exists
 
 Register With Too Short Username And Valid Password
-    Input Credentials   iy  jeps5839
+    Input Credentials   iy  yeah5839
     Output Should Contain   Username should be at least three characters between a-z
 
 Register With Enough Long But Invalid Username And Valid Password
-    Input Credentials  joe89  okok1212
+    Input Credentials  joe89  okpw4312
     Output Should Contain    Username should be at least three characters between a-z
 
 Register With Valid Username And Too Short Password
